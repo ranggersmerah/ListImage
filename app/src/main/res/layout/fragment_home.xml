@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp">
+
+            <TextView
+                android:id="@+id/title_img_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="@string/my_application"
+                android:textSize="16sp"
+                android:layout_marginStart="15dp"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pg_list_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_img_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="2.5dp"
+            android:overScrollMode="never"
+            android:visibility="visible"
+            android:paddingBottom="1dp"/>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

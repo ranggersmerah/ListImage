@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3973cf</color>
+    <color name="colorPrimaryDark">#3465b2</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Default_Grey">#DEDEDE</color>
+    <color name="hidden_text">#BDBDBD</color>
+
+    <array name="array_dot_active">
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/black</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/hidden_text</item>
+        <item>@color/hidden_text</item>
+        <item>@color/hidden_text</item>
+    </array>
+</resources>
